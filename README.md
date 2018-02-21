@@ -48,7 +48,10 @@ repeat.
 
 After you work on a file in the repo "Pads-project"
 Open source tree you'll see "staged files", "unstaged files" 
-When you've finished working save, stage and commit changes.
+When you've finished working stage your files.
+Enter a comment at the bottom and choose commit.
+This will create a reference point that can be returned to in case of problems that cannot be avoided.
+Once you've commited you'll choose push at the top to push your current work back to the server.
 
 Some general guidelines about creating code
 The goal is to keep this as an object oriented application.
