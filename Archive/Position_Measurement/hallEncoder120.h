@@ -4,9 +4,10 @@
 bool digitalRead(int pin) {
 	return true;
 }
-int micros(void) {
-	return 1;
-}
+//int micros(void) 
+//{
+//	return 1;
+//}
 int analogRead(int pin) {
 	return 5;
 }
@@ -385,13 +386,13 @@ public:
 		Serial.println(sensorOn);
 	}
 
-	void printMessage(auto message, int value) {
+	/*void printMessage(auto message, int value) {
 		/// _________________________________________________________________________
 		/// This function allows me to print out something to do with the encoder
 		/// _________________________________________________________________________
 		Serial.print(message);
 		Serial.println(value);
-	}
+	}*/
 
 	void timeFunction(auto Function) {
 		/* this function times certain functions above that will be used a lot so I can opitimize code*/
@@ -437,7 +438,7 @@ public:
 		while (1) {
 			readPinsD();
 			trackPositionS();
-			Serial.print(micros()*1000 - t1);
+			Serial.print((int)micros()*1000 - t1);
 			Serial.print(' ');
 			Serial.println(pos);
 		}

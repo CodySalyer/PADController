@@ -32,7 +32,7 @@ private:
 
 public:
 	/*default constructor leaves default pins A,B,C to 13,12,11*/
-	HallEncoder(int pin_A, int pin_B, int pin_C) {}
+	HallEncoder() {}
 
 	/*constructor for overwriting default pins A,B,C to 13,12,11*/
 	HallEncoder(int pin_A, int pin_B, int pin_C)

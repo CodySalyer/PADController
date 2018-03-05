@@ -7,11 +7,12 @@ Delete before use
 #define INPUT 1
 #define HIGH 1
 #define LOW 0
+
 void digitalWrite(int a, int b) { }
 void analogWrite(int a, int b) { }
 int analogRead(int a) {return 1;}
 void pinMode(int a, bool b){ }
-int abs(int a) { return 1; }
+//int abs(int a) { return 1; }
 int map(int a, int b, int c, int d, int e) { return 1; }
 
 class joystick3 {

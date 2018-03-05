@@ -3,7 +3,7 @@
 #include <Error.h>
 
 BrushlessControl motor1;
-HallEncoder encoder1;
+HallEncoder encoder1 ;
 
 void setup()
 {
