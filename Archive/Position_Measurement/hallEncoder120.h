@@ -1,27 +1,27 @@
 #pragma once
 /* Things to delet from code*/
 
-bool digitalRead(int pin) {
-	return true;
-}
-int micros(void) {
-	return 1;
-}
-int analogRead(int pin) {
-	return 5;
-}
-#define INPUT 0
-#define OUTPUT 1
-void pinMode(int a, int b) {
+//bool digitalRead(int pin) {
+	//return true;
+//}
+//int micros(void) {
+//	return 1;
+//}
+//int analogRead(int pin) {
+//	return 5;
+//}
+//#define INPUT 0
+//#define OUTPUT 1
+//void pinMode(int a, int b) {
 
-}
-class serial {
-public:
-	void print(char* message) {	}
-	void print(char c) {	}
-	void print(int a) { 	}
-	void println(int value) {	}
-};
+//}
+//class serial {
+//public:
+	//void print(char* message) {	}
+	//void print(char c) {	}
+	//void print(int a) { 	}
+	//void println(int value) {	}
+//};
 
 /*+++++++++++++++++++++++++++++++*/
 
@@ -36,7 +36,7 @@ class Aarons_Encoder {
 	/// _________________________________________________________________________
 private:
 	/*Things to Delete from Class*/
-	serial Serial;
+//	serial Serial;
 	/*++++++++++++++++++++++++++*/
 	/// _________________________________________________________________________
 	/// Variables used through out the code.  Using char since they take less 

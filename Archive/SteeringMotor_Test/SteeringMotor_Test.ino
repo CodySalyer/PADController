@@ -30,19 +30,19 @@ void typeMotorSpeed( void );
 void DriveMotor( void );
 
 void loop() {
-  typeMotorSpeed();
-  steer.readPinsD();
-  steer.trackPositionS();
-  posError.takeErrorReading(desiredPos, steer.getPosition());
-  DriveMotor();
-//  steer.printMessage("Position: ",steer.getPosition());
+  //typeMotorSpeed();
+  //steer.readPinsD();
+  //steer.trackPositionS();
+  //posError.takeErrorReading(desiredPos, steer.getPosition());
+  //DriveMotor();
+  //steer.printMessage("Position: ",steer.getPosition());
   //Serial.print(posError.getSign());
   //Serial.print(" ");
-//  steer.printMessage("Error: ", posError.getSign());
-//  steer.highPin();
-//  steer.printMessage("Position: ",steer.getPosition());
-//  steer.timeFunction("trackPositionS");
-//  steer.timeFunction("trackPositionEI");
+  //steer.printMessage("Error: ", posError.getSign());
+  //steer.highPin();
+  //steer.printMessage("Position: ",steer.getPosition());
+  //steer.timeFunction("trackPositionS");
+  //steer.timeFunction("trackPositionEI");
 }
 
 
