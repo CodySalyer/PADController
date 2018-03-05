@@ -1,3 +1,4 @@
+#include <Array.h>
 #include <HallEncoder.h>
 #include <BrushlessControl.h>
 #include <Error.h>
