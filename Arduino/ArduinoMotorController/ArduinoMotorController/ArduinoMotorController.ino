@@ -3,10 +3,15 @@
  Created:	2/21/2018 3:21:51 PM
  Author:	C Salyer
 */
-#include <MotorModule.h>
 
-MotorModule RearMotor(4, 3, 2, 9); 
-//MotorModule FrontMotor(-, -, -, -);
+#include <SteeringMotorEncoder.h>
+#include <SteeringMotor.h>
+
+SteeringMotor RearSteeringMotor(4, 3, 2, 9); 
+//SteeringMotorEncoder FrontSteeringMotor(-, -, -, -);
+
+SteeringMotorEncoder RearSteeringMotorEncoder(13, 12, 11);
+//SteeringMotorEncoder FrontSteeringMotorEncoder(-, -, -);
 
 
 void setup() 

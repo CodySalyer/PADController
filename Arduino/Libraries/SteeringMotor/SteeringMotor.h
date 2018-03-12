@@ -1,7 +1,7 @@
-// Motor.h
+// SteeringMotor.h
 
-#ifndef _MOTOR_h
-#define _MOTOR_h
+#ifndef _STEERINGMOTOR_h
+#define _STEERINGMOTOR_h
 
 #if defined(ARDUINO) && ARDUINO >= 100
 	#include "arduino.h"
@@ -9,7 +9,7 @@
 	#include "WProgram.h"
 #endif
 
-class MotorModule
+class SteeringMotor
 {
 
  protected:
@@ -20,10 +20,10 @@ class MotorModule
 	 byte brakePin;
 	 byte potPin;
 
-	 MotorModule(byte EnablePin, byte DirectionPin, byte BrakePin, byte PotPin);
+	 SteeringMotor(byte EnablePin, byte DirectionPin, byte BrakePin, byte PotPin);
 };
 
-extern MotorModule Motor;
+extern SteeringMotor steeringMotor;
 
 #endif
 
