@@ -3,8 +3,12 @@
  Created:	2/21/2018 3:21:51 PM
  Author:	C Salyer
 */
+#include <MotorModule.h>
 
-// the setup function runs once when you press reset or power the board
+MotorModule RearMotor(4, 3, 2, 9); 
+//MotorModule FrontMotor(-, -, -, -);
+
+
 void setup() 
 {
 
