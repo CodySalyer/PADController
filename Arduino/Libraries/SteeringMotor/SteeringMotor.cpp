@@ -4,9 +4,13 @@
 
 #include "SteeringMotor.h"
 
-
 SteeringMotor::SteeringMotor(byte EnablePin, byte DirectionPin, byte BrakePin, byte PotPin)
 {
+	pinMode(EnablePin, OUTPUT);
+	pinMode(DirectionPin,OUTPUT);
+	pinMode(BrakePin,OUTPUT);
+	pinMode(PotPin,OUTPUT);
+
 	enablePin = EnablePin;
 	directionPin = DirectionPin;
 	brakePin = BrakePin;

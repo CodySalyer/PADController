@@ -17,17 +17,4 @@
   <ItemGroup>
     <None Include="JoystickTest.ino" />
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="__vm\.JoystickTest.vsarduino.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Motor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Motor.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
 </Project>

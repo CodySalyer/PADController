@@ -3,11 +3,7 @@
 #ifndef _TRIMMOTOR_h
 #define _TRIMMOTOR_h
 
-#if defined(ARDUINO) && ARDUINO >= 100
-	#include "arduino.h"
-#else
-	#include "WProgram.h"
-#endif
+#include "arduino.h"
 
 class TrimMotor
 {
@@ -19,8 +15,7 @@ class TrimMotor
 	 byte trimDownPin;
 	 byte enablePin;
 	
-
-	 SteeringMotor(byte TrimUpPin, byte TrimDownPin, byte Enable);
+	 TrimMotor(byte TrimUpPin, byte TrimDownPin, byte EnablePin);
 };
 
 extern TrimMotor trimMotor;
