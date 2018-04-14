@@ -1,0 +1,152 @@
+﻿<Page
+    x:Class="CFPPadController.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CFPPadController"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Width="800" Height="480">
+
+    <Grid Width="800" Height="480">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Images/AppBackground.jpg" AlignmentY="Center" AlignmentX="Center"/>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="50*" />
+        </Grid.RowDefinitions>
+
+        <Button x:Name="FrontMotorRaise" HorizontalAlignment="Left" Margin="473,327,0,-723" Grid.RowSpan="2" VerticalAlignment="Top" Width="74" Height="35" Background="Transparent" BorderThickness="0" BorderBrush="Transparent" Click="FrontMotorRaise_Click">
+            <Button.Content>
+                <Border x:Name="FrontMotorRaiseBoarder" CornerRadius="5" Height="35" Width="74" Margin="-8,-4,-7.8,-3.6" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="#FF2F5597" BorderThickness="0,0,0,0">
+                    <Border.Background>
+                        <ImageBrush x:Name="FrontMotorRaiseImage" ImageSource="Images/PlusIconNotPressed.png"/>
+                    </Border.Background>
+                </Border>
+            </Button.Content>
+        </Button>
+
+        <Button x:Name="FrontMotorLower" HorizontalAlignment="Left" Margin="473,368,0,-723" Grid.RowSpan="2" VerticalAlignment="Top" Width="74" Height="35" Background="Transparent" BorderThickness="0" BorderBrush="Transparent" Click="FrontMotorLower_Click">
+            <Button.Content>
+                <Border x:Name="FrontMotorLowerBoarder" CornerRadius="5" Width="74" Height="35" Margin="-8,-4,-7.8,-3.6" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="#FF2F5597" BorderThickness="0,0,0,0">
+                    <Border.Background>
+                        <ImageBrush x:Name="FrontMotorLowerImage" ImageSource="Images/Minus.png"/>
+                    </Border.Background>
+                </Border>
+            </Button.Content>
+        </Button>
+
+        <Button x:Name="FrontMotorTrailer" HorizontalAlignment="Left" Margin="549,327,0,-723" Grid.RowSpan="2" VerticalAlignment="Top" Width="74" Height="35" Background="Transparent" BorderThickness="0" BorderBrush="Transparent" Click="FrontMotorTrailer_Click">
+            <Button.Content>
+                <Border x:Name="FrontMotorTrailerBoarder" CornerRadius="5" Width="74" Height="35" Margin="-8,-4,-7.8,-3.6" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="#FF2F5597" BorderThickness="0,0,0,0">
+                    <Border.Background>
+                        <ImageBrush x:Name="FrontMotorTrailerImage" ImageSource="Images/Trailer.png"/>
+                    </Border.Background>
+                </Border>
+            </Button.Content>
+        </Button>
+
+        <Button x:Name="FrontMotorCruise" HorizontalAlignment="Left" Margin="549,368,0,-723" Grid.RowSpan="2" VerticalAlignment="Top" Width="74" Height="35" Background="Transparent" BorderThickness="0" BorderBrush="Transparent" Click="FrontMotorCruise_Click">
+            <Button.Content>
+                <Border x:Name="FrontMotorCruiseBoarder" CornerRadius="5" Width="74" Height="35" Margin="-8,-4,-7.8,-3.6" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="#FF2F5597" BorderThickness="0,0,0,0">
+                    <Border.Background>
+                        <ImageBrush x:Name="FrontMotorCruiseImage" ImageSource="Images/Cruise.png"/>
+                    </Border.Background>
+                </Border>
+            </Button.Content>
+        </Button>
+
+        <Button x:Name="RearMotorRaise" HorizontalAlignment="Left" Margin="640,327,0,-723" Grid.RowSpan="2" VerticalAlignment="Top" Width="74" Height="35" Background="Transparent" BorderThickness="0" BorderBrush="Transparent" Click="RearMotorRaise_Click">
+            <Button.Content>
+                <Border x:Name="RearMotorRaiseBoarder" CornerRadius="5" Width="74" Height="35" Margin="-8,-4,-7.8,-3.6" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="#FF2F5597" BorderThickness="0,0,0,0">
+                    <Border.Background>
+                        <ImageBrush x:Name="RearMotorRaiseImage" ImageSource="Images/PlusIconNotPressed.png"/>
+                    </Border.Background>
+                </Border>
+            </Button.Content>
+        </Button>
+
+        <Button x:Name="RearMotorLower" HorizontalAlignment="Left" Margin="640,368,0,-723" Grid.RowSpan="2" VerticalAlignment="Top" Width="74" Height="35" Background="Transparent" BorderThickness="0" BorderBrush="Transparent" Click="RearMotorLower_Click">
+            <Button.Content>
+                <Border x:Name="RearMotorLowerBoarder" CornerRadius="5" Width="74" Height="35" Margin="-8,-4,-7.8,-3.6" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="#FF2F5597" BorderThickness="0,0,0,0">
+                    <Border.Background>
+                        <ImageBrush x:Name="RearMotorLowerImage" ImageSource="Images/Minus.png"/>
+                    </Border.Background>
+                </Border>
+            </Button.Content>
+        </Button>
+
+        <Button x:Name="RearMotorTrailer" HorizontalAlignment="Left" Margin="715,327,0,-723" Grid.RowSpan="2" VerticalAlignment="Top" Width="74" Height="35" Background="Transparent" BorderThickness="0" BorderBrush="Transparent" Click="RearMotorTrailer_Click">
+            <Button.Content>
+                <Border x:Name="RearMotorTrailerBoarder" CornerRadius="5" Width="74" Height="35" Margin="-8,-4,-7.8,-3.6" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="#FF2F5597" BorderThickness="0,0,0,0">
+                    <Border.Background>
+                        <ImageBrush x:Name="RearMotorTrailerImage" ImageSource="Images/Trailer.png"/>
+                    </Border.Background>
+                </Border>
+            </Button.Content>
+        </Button>
+
+        <Button x:Name="RearMotorCruise" HorizontalAlignment="Left" Margin="715,368,0,-723" Grid.RowSpan="2" VerticalAlignment="Top" Width="74" Height="35" Background="Transparent" BorderThickness="0" BorderBrush="Transparent" Click="RearMotorCruise_Click">
+            <Button.Content>
+                <Border x:Name="RearMotorCruiseBoarder" CornerRadius="5" Width="74" Height="35" Margin="-8,-4,-7.8,-3.6" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="#FF2F5597" BorderThickness="0,0,0,0">
+                    <Border.Background>
+                        <ImageBrush x:Name="RearMotorCruiseImage" ImageSource="Images/Cruise.png"/>
+                    </Border.Background>
+                </Border>
+            </Button.Content>
+        </Button>
+
+        <Button x:Name="SippuffControls" HorizontalAlignment="Left" Margin="682 ,422,0,-723" Grid.RowSpan="2" VerticalAlignment="Top" Width="110" Height="50" Background="Transparent" BorderThickness="0" BorderBrush="Transparent" Click="FrontMotorRaise_Click">
+            <Button.Content>
+                <Border x:Name="SippuffControlsBoarder" CornerRadius="5" Width="110" Height="50" Margin="-8,-4,-7.8,-3.6" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="#FF2F5597" BorderThickness="0,0,0,0">
+                    <Border.Background>
+                        <ImageBrush x:Name="SippuffControlsImage" ImageSource="Images/Activate.png"/>
+                    </Border.Background>
+                </Border>
+            </Button.Content>
+        </Button>
+
+        <Button x:Name="OpenWater" HorizontalAlignment="Left" Margin="682 ,82 ,0,-723" Grid.RowSpan="2" VerticalAlignment="Top" Width="110" Height="55" Background="Transparent" BorderThickness="0" BorderBrush="Transparent" Click="FrontMotorRaise_Click">
+            <Button.Content>
+                <Border x:Name="OpenWaterBoarder" CornerRadius="5" Width="110" Height="55" Margin="-8,-4,-7.8,-3.6" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="#FF2F5597" BorderThickness="0,0,0,0">
+                    <Border.Background>
+                        <ImageBrush x:Name="OpenWaterImage" ImageSource="Images/Open Water.png"/>
+                    </Border.Background>
+                </Border>
+            </Button.Content>
+        </Button>
+
+        <Button x:Name="Docking" HorizontalAlignment="Left" Margin="455 ,82 ,0,-723" Grid.RowSpan="2" VerticalAlignment="Top" Width="110" Height="55" Background="Transparent" BorderThickness="0" BorderBrush="Transparent" Click="FrontMotorRaise_Click">
+            <Button.Content>
+                <Border x:Name="DockingBoarder" CornerRadius="5" Width="110" Height="55" Margin="-8,-4,-7.8,-3.6" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="#FF2F5597" BorderThickness="0,0,0,0">
+                    <Border.Background>
+                        <ImageBrush x:Name="DockingImage" ImageSource="Images/Docking.png"/>
+                    </Border.Background>
+                </Border>
+            </Button.Content>
+        </Button>
+
+        <Button x:Name="Settings" HorizontalAlignment="Left" Margin="0 ,1 ,0,-723" Grid.RowSpan="2" VerticalAlignment="Top" Width="80" Height="70" Background="Transparent" BorderThickness="0" BorderBrush="Transparent" Click="FrontMotorRaise_Click">
+            <Button.Content>
+                <Border x:Name="SettingsBoarder" CornerRadius="5" Width="80" Height="70" Margin="-8,-4,-7.8,-3.6" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="#FF2F5597" BorderThickness="0,0,0,0">
+                    <Border.Background>
+                        <ImageBrush x:Name="SettingsImage" ImageSource="Images/Gear.png"/>
+                    </Border.Background>
+                </Border>
+            </Button.Content>
+        </Button>
+        <TextBox x:Name="TextBox" HorizontalAlignment="Left" Margin="422,22,0,-54" Grid.RowSpan="2" Text="TextBox" VerticalAlignment="Top" Width="355"/>
+        <Image x:Name="RearMotorIcon" Source="Images/MotorIcon.png" Stretch="UniformToFill" HorizontalAlignment="Left" Height="100" Margin="608,213,0,-313" Grid.RowSpan="2" VerticalAlignment="Top" Width="100">
+            <Image.RenderTransform>
+                <RotateTransform x:Name="RearMotorTransform" CenterX="65" CenterY="20" Angle="0"/>
+            </Image.RenderTransform>
+        </Image>
+        
+        <Image x:Name="FrontMotorIcon" Source="Images/MotorIcon.png" Stretch="UniformToFill" HorizontalAlignment="Left" Height="100" Margin="442,213,0,-313" Grid.RowSpan="2" VerticalAlignment="Top" Width="100">
+            <Image.RenderTransform>
+                <RotateTransform x:Name="FrontMotorTransform"/>
+            </Image.RenderTransform>
+        </Image>
+    </Grid>
+</Page>
